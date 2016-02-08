@@ -12,6 +12,7 @@ using namespace std;
 int main()
 {
 	cout<<"test";
+	cout<<"pushed";
 	return 0;
 
 
