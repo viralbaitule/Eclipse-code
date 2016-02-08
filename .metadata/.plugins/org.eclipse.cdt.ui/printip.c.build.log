@@ -1,0 +1,5 @@
+02:18:12 **** Clean-only build of configuration Debug for project printip.c ****
+rm -rf printip.c.exe printip.o printip.d 
+
+02:18:13 Build Finished (took 607ms)
+
