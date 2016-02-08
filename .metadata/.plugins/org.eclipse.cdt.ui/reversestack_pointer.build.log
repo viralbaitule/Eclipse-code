@@ -1,0 +1,13 @@
+22:00:12 **** Incremental Build of configuration Debug for project reversestack_pointer ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o reversestack_pointer.o "..\\reversestack_pointer.cpp" 
+..\reversestack_pointer.cpp: In function 'int reverse(std::vector<char>*)':
+..\reversestack_pointer.cpp:26:11: error: request for member 'size' in 'k', which is of pointer type 'std::vector<char>*' (maybe you meant to use '->' ?)
+  int l=*k.size();
+           ^
+..\reversestack_pointer.cpp:34:4: error: no match for 'operator*' (operand type is 'std::vector<char>')
+   (*(k)[i])=s.top();
+    ^
+
+22:00:12 Build Finished (took 344ms)
+
