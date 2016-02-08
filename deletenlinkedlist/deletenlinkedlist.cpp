@@ -19,6 +19,7 @@ int insert(int x)
 	mynode->data=x;
 	mynode->next=head;
 	head=mynode;
+
 	return 0;
 }
 
