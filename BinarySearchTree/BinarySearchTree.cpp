@@ -89,19 +89,31 @@ int findmax(node *root)
 	return 0;
 }
 
-int preorder(node *root)
+void preorder(node *root)
 {
-	return 0;
+	if(root==NULL)
+		return ;
+	cout<<root->data;
+	preorder(root->left);
+	preorder(root->right);
 }
 
-int postorder(node *root)
+void postorder(node *root)
 {
-	return 0;
+	if (root==NULL)
+		return ;
+	postorder(root->left);
+	postorder(root->right);
+	cout<<root->data;
 }
 
-int inorder(node *root)
+void inorder(node *root)
 {
-	return 0;
+	if(root==NULL)
+		return ;
+	inorder(root->left);
+	cout<<root->data;
+	inorder(root->right);
 }
 
 
@@ -114,9 +126,10 @@ int main()
 	while(1)
 	{
 		cout<<"enter the no. for the required operation"<<endl;
-		cout<<"1: insert a no.:"<<endl<<"2: Search a No."<<endl<<"3: find minimum no.";
-		cout<<endl<<"4: find maximum no."<<endl<<"5:Pre-order traversal";
-		cout<<endl<<"6: post-order traversal"<<endl<<"7:In-order traversal"<<endl<<"9:exit"<<endl;
+		cout<<"1:insert a no.:"<<endl<<"2:Search a No."<<endl<<"3:find minimum no.";
+		cout<<endl<<"4:find maximum no."<<endl<<"5:Pre-order traversal";
+		cout<<endl<<"6:post-order traversal"<<endl<<"7:In-order traversal"<<endl;
+		cout<<"8:Delete the no."<<endl<<"9:exit"<<endl;
 		cin>>choice;
 
 		switch(choice)
@@ -160,7 +173,10 @@ int main()
 			inorder(root);
 			break;
 		}
-
+		case 8:
+		{
+			break;
+		}
 		case 9:
 		{
 			return 0;
